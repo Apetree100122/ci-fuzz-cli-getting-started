@@ -31,4 +31,4 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # verbose
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{CI-FUZZ/WORKFLOW}}
+      run: msbuild
