@@ -49,10 +49,7 @@ jobs:
     - name: 'Restore Project Dependencies Using Mvn'
       shell: pwsh # For Linux, use bash
       run: |
-        pushd './${{ env.POM_XML_DIRECTORY }}'
-        mvn clean package
-        popd
-
+        mvn -f path/to/pom.xml 
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
       id: fa
