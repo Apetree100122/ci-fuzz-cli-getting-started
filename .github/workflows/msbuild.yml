@@ -31,4 +31,5 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # verbose
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
-      run: msbuild
+      run: msbuild C:\ProgramData\Chocolatey\bin\vswhere.exe -products 
+      - Microsoft.Component.MSBuild -property installationPath -latest
